@@ -29,15 +29,13 @@ The goal is to develop a machine learning model that can predict the length dime
 
 
 
-  - The input consists of all sorts of features: numeric, categorical, and text. Categorical input is translated into lower-dimensional space through Embedding Layer. Text input (product title, product description) is first tokenized into words and characters and transformed into lower-dimensional space through Embedding Layer. Learning product titles and descriptions on a character level may increase matches for misspelled products or products having slight differences in text input. GRU/LSTM Layer returns a hidden state of the last word or character in the sequence. Finally, all layer outputs are concatenated into a dense layer and additional dense or skip-connection layers can be defined on top. Two layers highlighted in green play an important role in our downstream task.
-  - The target variable price was first log-transformed and then transformed with scikit-learn PowerTransformer
-  - Model Parameters are summarised below :
+- The input consists of all sorts of features: numeric, categorical, and text. Categorical input is translated into lower-dimensional space through Embedding Layer. Text input (product title, product description) is first tokenized into words and characters and transformed into lower-dimensional space through Embedding Layer. Learning product titles and descriptions on a character level may increase matches for misspelled products or products having slight differences in text input. GRU/LSTM Layer returns a hidden state of the last word or character in the sequence. Finally, all layer outputs are concatenated into a dense layer and additional dense or skip-connection layers can be defined on top. Two layers highlighted in green play an important role in our downstream task.
+- The target variable price was first log-transformed and then transformed with scikit-learn PowerTransformer
+- Model Parameters are summarised below :
 
 
 
+     ![parameters](https://github.com/VectorNd/Amazon-ML-Challenge-2023/assets/111004091/e52bcf49-e505-45d9-8228-87ed6a2643db)
 
 
-
-
-
-    - Finally Training is done to predict the Product Length. 
+- Finally Training is done to predict the Product Length. 
